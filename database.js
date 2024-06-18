@@ -1,4 +1,6 @@
 const { Pool } = require('node-postgres');
+const dotenv = require('dotenv');
+dotenv.config();
 
 const pool = new Pool({
   host: process.env.PGHOST,
